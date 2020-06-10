@@ -1,0 +1,757 @@
+#chartdiv {
+	width: 80%;
+	height: 600px;
+	overflow: hidden;
+	padding-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}
+
+
+#worldSummary {	
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+.logos{
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.50, #333), color-stop(1, #404040));
+	background: -webkit-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -moz-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -o-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -ms-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: linear-gradient(to top, #333 50%, #404040 100%);
+	width: 100%;
+	height: auto;
+	padding: 3rem;
+	display: grid;
+
+}
+
+.js-logo:hover{
+ 	background-color: yellow;
+	transition: delay 2s;
+	border-style: solid;
+	color: black;
+}
+.html-logo:hover{
+	background-color: orangered;
+	transition: delay 2s;
+	border-style: solid;
+	color: black;
+}
+.css-logo:hover{
+	background-color: blue;
+	transition: delay 2s;
+	border-style: solid;
+	color: black;
+}
+
+#contributions-css:hover{
+	background-color: blue;
+	font-weight: bold;
+	white-space: pre-line;
+	color: black;
+	border-style: solid;
+}
+#contributions-html:hover{
+	background-color: orangered;
+	font-weight: bold;
+	white-space: pre-line;
+	color: black;
+	border-style: solid;
+}
+#contributions-js:hover{
+	background-color: yellow;
+	font-weight: bold;
+	white-space: pre-line;
+	color: black;
+	border-style: solid;
+
+}
+#contributions-css{
+	font-weight: bold;
+	white-space: pre-line;
+	color: white;
+	border-style: hidden;
+	transition: 0.5s;
+}
+#contributions-js{
+	font-weight: bold;
+	white-space: pre-line;
+	color: white;
+	border-style: hidden;
+	transition: 0.5s;
+}
+#contributions-html{
+	font-weight: bold;
+	white-space: pre-line;
+	color: white;
+	border-style: hidden;
+	transition: 0.5s;
+}
+.html-logo{
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	font-family: 'Gruppo';
+	border-style: hidden;
+	text-align: center;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	padding: 20px;
+	background-color: darkred;
+	color: white;
+	transition: 0.5s;
+	overflow: auto;
+}
+
+.js-logo{
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	font-family: 'Gruppo';
+	background-color: darkred;
+	text-align: center;
+	margin-bottom: 20px;
+	border-style: hidden;
+	color: white;
+	transition: 0.5s;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 25px;
+	display: flex;
+	align-content: center;
+	overflow: hidden;
+}
+.css-logo{
+	width: 100%;
+	height: auto;
+	max-width: 300px;
+	font-family: 'Gruppo';
+	background-color: darkred;
+	text-align: center;
+	margin-bottom: 20px;
+	border-style: hidden;
+	color: white;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 25px;
+	overflow: hidden;
+	transition: 0.5s;
+
+}
+
+.contributors-header{
+	font-family: 'Gruppo';
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: darkred;
+	margin-bottom: 20px;
+	color: white;
+	border-style: hidden;
+	padding: 10px;
+	border-style: hidden;
+	border-radius: 15px;
+	transition: 0.5s;
+}
+
+
+.contributors-header:hover{
+	font-family: 'Gruppo';
+	width: 100%;
+	height: auto;
+	text-align: center;
+	background-color: darkred;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	padding: 10px;
+	border-style: solid;
+	font-weight: bold;
+	color: black;
+
+}
+ .copyright{
+	text-decoration: aquamarine;
+	color: black;
+	border-bottom: 1px solid #ccc;
+	position:page;
+	font-family: 'Gruppo';
+	left:0;
+	bottom:0;
+	height:30px;
+	width:100%;
+	padding: 2px;
+
+
+}
+ #top{
+	 display: flex;
+ }
+.github{
+	width: 100%;
+	max-width: 140px;
+	height: auto;
+	padding: 5px;
+	background: black;
+	transition: 0.5s;
+	border-radius: 20px;
+	margin-right: auto;
+	margin-left: 650px;
+}
+
+#breakdown{
+	font-family: 'Gruppo';
+	background-size: cover;
+	background:darkred;
+	color: white;
+	padding: 10px;
+	border-radius: 15px;
+	max-width: 300px;
+}
+
+#breakdown{
+	font-family: 'Gruppo';
+	background-size: cover;
+	background:darkred;
+	color: white;
+	padding: 10px;
+	border-radius: 15px;
+	max-width: 300px;
+	transition: 0.5s;
+}
+#breakdown:hover{
+	font-family: 'Gruppo';
+	background-size: cover;
+	background:darkred;
+	color: black;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 15px;
+	max-width: 300px;
+}
+#github {display: block;}
+@media screen and (max-width: 768px) {
+	#github {
+		display: none;
+	}
+	}
+
+.github:hover{
+	width: 100%;
+	max-width: 120px;
+	height: auto;
+	padding: 5px;
+	background: darkred;
+
+}
+#symptoms {	
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:30%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr;
+}
+
+header {
+	text-align: Center;
+}
+
+/* setting  for my header image class elements*/
+.headerImg {
+	max-width: 300px;
+	max-height: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/* I want the image to load after two seconds to this is the reason for seperate classes*/
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+#transGIF {
+  display: block;
+  width: 50%;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-top: 5px;
+
+}
+
+#safetyCard {
+  display: block;
+  width: 50%;
+  height: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding-top: 5px;
+}
+
+/* main settins for h3 elements*/
+h3 {
+	text-align: center;
+	font-family: 'Gruppo';
+	color: white;
+	/* I want the image to load after two seconds to this is the reason for seperate classes*/
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+/* main settins for h3 elements*/
+h4 {
+	text-align: center;
+	font-family: 'Gruppo';
+	font-size: 20px;
+	color: white;
+	/* I want the image to load after two seconds to this is the reason for seperate classes*/
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+#recoveredNew, #recoveredTotal {
+	color: #7FFFD4;
+}
+
+#deathsNew, #deathsTotal {
+	color: #DC143C;
+}
+
+#casesNew, #casesTotal {
+	color: #FF8C00;
+}
+
+#countries {
+  width: 15%;
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: black;
+}
+
+#chartSection {	
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr;
+	align-items: center;
+}
+
+iframe {
+	margin-left: auto;
+	margin-right: auto;
+	width:60%;
+	height:400px;
+}
+
+#video1 {
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 25px;
+	background: #404040;
+	transition: 0.3s;
+}
+#video1:hover{
+	background: black;
+
+}
+#video2:hover{
+	background: black;
+
+}
+#video3:hover{
+	background: black;
+
+}
+#video2 {
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 25px;
+	background: #404040;
+	transition: 0.3s;
+}
+#video3 {
+	/*--setting as an inline grid as I want my divs displayed this way. */
+	display:grid;
+	width:80%;
+	margin-left: auto;
+	margin-right: auto;
+	grid-template-columns: 1fr;
+	padding: 20px;
+	border-style: hidden;
+	border-radius: 25px;
+	background: #404040;
+	transition: 0.3s;
+}
+
+#countryChartConfirmed {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+
+#countryChartDeaths {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#countryChartRecovered {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*adds gradient effect for background*/
+body {
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.80, #333), color-stop(1, #404040));
+	background: -webkit-linear-gradient(bottom, #333 80%, #404040 100%);
+	background: -moz-linear-gradient(bottom, #333 80%, #404040 100%);
+	background: -o-linear-gradient(bottom, #333 80%, #404040 100%);
+	background: -ms-linear-gradient(bottom, #333 80%, #404040 100%);
+	background: linear-gradient(to top, #333 80%, #404040 100%);
+}
+
+#countryBody {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* sets the overall style of my nav bar for my homepage. */ /*added gradient to match rest of page*/
+.navbarHome {
+	display: flex;
+	background: -webkit-gradient(linear, left bottom, left top, color-stop(0.50, #333), color-stop(1, #404040));
+	background: -webkit-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -moz-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -o-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: -ms-linear-gradient(bottom, #333 50%, #404040 100%);
+	background: linear-gradient(to top, #333 50%, #404040 100%);
+	margin-bottom: 20px;
+	border-radius: 20px;
+	border-style: inherit;
+	padding: 5px;
+	font-family: 'Gruppo';
+	text-align:center;
+	justify-content: center;
+	/* I want the navbar on the homepage to load after two seconds to this is the reason for seperate classes*/
+	-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+	-moz-animation: fadein 2s; /* Firefox < 16 */
+	-ms-animation: fadein 2s; /* Internet Explorer */
+	-o-animation: fadein 2s; /* Opera < 12.1 */
+	animation: fadein 2s;
+}
+
+/* sets the style of each a within the navbar class. */
+/* text colour is set to white, padding and centre align are also applied */
+.navbarHome a {
+	color: white;
+	padding: 14px 20px;
+	text-decoration: none;
+	text-align: center;
+	flex-direction: column;
+}
+
+/* changes the colour of the links above to white hover. */
+.navbarHome a:hover {
+	background-color: #ddd;
+	color: black;
+	border-radius: 10px;
+}
+.button-1{
+	background-color: white;
+	border: none;
+	color: black;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 10px;
+	font-family: 'Grubbo';
+}
+.button-1:hover{
+	background-color: #800;
+	color: white;
+	font-family: 'Grubbo';
+	font-weight: bold;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 60%;
+  margin: 0 auto;
+  font-family: 'Gruppo';
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+	content: '';
+	position: absolute;
+	width: 6px;
+	background-color: red;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+	padding: 10px 40px;
+	position: relative;
+	background-color: inherit;
+	width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	right: -17px;
+	background-color: darkred;
+	border: 4px solid red;
+	top: 15px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+	left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The content for timelines*/
+.content {
+	padding: 20px 30px;
+	background-color: gray;
+	position: relative;
+	border-radius: 6px;
+	color: white;
+}
+
+.commentBox {
+	padding: 1%;
+	width: 40%;
+	border: 1px solid #000;
+	background-color: #f0f0f0;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+.rightPanel {
+	width: 40%;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.clear {
+	clear: both;
+}
+#results{
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.83, #800000), color-stop(1, #400000));
+	background: -webkit-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -moz-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -o-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -ms-linear-gradient(top, #800000 83%, #400000 100%);
+	background: linear-gradient(to bottom, #800000 83%, #400000 100%);
+	width: 100%;
+	height: auto;
+	text-align: center;
+	font-family: 'Gruppo';
+	margin-bottom: 20px;
+	border-radius: 20px;
+	padding: 10px;
+	border-style: solid;
+
+}
+.questions{
+	/* Code for the gradient */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.83, #c0c0c0), color-stop(1, #5c5c5c));
+	background: -webkit-linear-gradient(top, #c0c0c0 83%, #5c5c5c 100%);
+	background: -moz-linear-gradient(top, #c0c0c0 83%, #5c5c5c 100%);
+	background: -o-linear-gradient(top, #c0c0c0 83%, #5c5c5c 100%);
+	background: -ms-linear-gradient(top, #c0c0c0 83%, #5c5c5c 100%);
+	background: linear-gradient(to bottom, #c0c0c0 83%, #5c5c5c 100%);
+	margin-bottom: 40px;
+	font-size: 85%;
+	padding: 20px;
+	width: 100%;
+	height: auto;
+	font-family: 'Gruppo';
+	border-style: solid;
+	border-radius: 10px; /*rounds out the edges of border*/
+
+}
+.form {
+
+	text-align: center;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form input[type="text"],
+.form textarea,
+.form input[type="date"] {
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.active {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0.83, #800000), color-stop(1, #400000));
+	background: -webkit-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -moz-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -o-linear-gradient(top, #800000 83%, #400000 100%);
+	background: -ms-linear-gradient(top, #800000 83%, #400000 100%);
+	background: linear-gradient(to bottom, #800000 83%, #400000 100%);
+	border-style: hidden;
+	border-radius: 10px;
+}
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+	/* Place the timelime to the left */
+	.timeline::after {
+	left: 31px;
+	}
+  
+  /* Full-width containers */
+	.container {
+		width: 100%;
+		padding-left: 70px;
+		padding-right: 25px;
+	}
+  
+  /* Make sure that all arrows are pointing leftwards */
+	.container::before {
+		left: 60px;
+		border: medium solid white;
+		border-width: 10px 10px 10px 0;
+		border-color: transparent white transparent transparent;
+	}
+
+  /* Make sure all circles are at the same spot */
+	.left::after, .right::after {
+		left: 15px;
+	}
+  
+  /* Make all right containers behave like the left ones */
+	.right {
+		left: 0%;
+	}
+  
+	#transGIF {
+		display: block;
+		width: 100%;
+		height: 200px;
+	}
+
+	#safetyCard {
+		display: block;
+		width: 100%;
+		height: 800px;
+	}
+
+	.row, .navbarHome {   
+		flex-direction: column;
+	}
+	
+	#chartdiv {
+		width: 100%;
+		height: 200px;
+	}
+	
+	#chartSection {	
+		width:100%;
+
+	}
+
+}
+

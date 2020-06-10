@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <!-- As the majority of notes would be copy and paste I have only noted this HTML and the earlyyears HTML. CSS is fully noted-->
+        <title>SARS-CoV-2 (Covid-19) - HomePage</title>
+        <meta charset="UTF-8">
+        <!-- setting viewport to make my grid flexible -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- naming my css file -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo" />
+		<!-- map libraries -->
+		<script src="https://www.amcharts.com/lib/4/core.js"></script>
+		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://www.amcharts.com/lib/4/maps.js"></script>
+		<script src="https://www.amcharts.com/lib/4/geodata/worldLow.js"></script>
+		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<script type="text/javascript" src="javascript/apps.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1><a href="index.html"><img class="headerImg" src="images/covid19.png" alt="Covid"></a></h1>
+            <h3>SARS-CoV-2 (Covid-19)</h3>
+            <!-- div to create my flexbox navigation bar-->
+            <nav class="navbarHome">
+                <!-- items for my navigation menu-->
+                <a id="navIntro" class="active" href="index.html">Home</a>
+				<a id="navIntro" href="countrydata.html">Country Data</a>
+				<a id="navIntro" href="safetysteps.html">Safety Steps</a>
+				<a id="navIntro" href="symptomchecker.html">Symptom Checker</a>
+				<a id="navIntro" href="videos.html">Videos</a>
+				<a id="navIntro" href="history.html">History</a>
+				<a id="navIntro" href="contact.html">Contact Us</a>
+				<a id="navIntro" href="developers.html">Developers</a>
+            </nav>
+        </header>
+		<!-- section contains totals updated by js function once ajax call is complete-->
+		<section id = "worldSummary" onload="myScript">
+			<h4 id = "casesTotal"> Total Cases Worldwide: </h4>
+			<h4 id = "deathsTotal"> Total Deaths Worldwide: </h4>
+			<h4 id = "recoveredTotal"> Total Recovered Worldwide: </h4>
+			<h4 id = "casesNew"> New Cases Worldwide: </h4>
+			<h4 id = "deathsNew"> New Deaths Worldwide: </h4>
+			<h4 id = "recoveredNew"> New Recovered Worldwide: </h4>
+			<!-- map of world displaying api data from amcharts (link to their website on map for credit-->
+			<div id="chartdiv"></div>
+		</section>
+    </body>
+
+</HTML>
+
+
+
+

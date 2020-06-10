@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<HTML lang="en">
+<head>
+    <!-- As the majority of notes would be copy and paste I have only noted this HTML and the earlyyears HTML. CSS is fully noted-->
+    <title>Covid19 - Symptom Checker</title>
+    <meta charset="UTF-8">
+    <!-- setting viewport to make my grid flexible -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- naming my css file -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="javascript/symptomschecker.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo" />
+
+
+    <!-- map libraries -->
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/javascript" src="javascript/countrydataapps.js"></script>
+
+
+</head>
+<body id = "countryBody">
+<Header class="header">
+
+
+
+    <h1><a href="index.html"><img class="headerImg" src="images/covid19.png" alt="Covid"></a></h1>
+    <h3>Covid Tracker</h3>
+    <!-- div to create my flexbox navigation bar-->
+    <nav class="navbarHome">
+        <!-- items for my navigation menu-->
+        <a id="navIntro" href="index.html">Home</a>
+        <a id="navIntro" href="countrydata.html">Country Data</a>
+        <a id="navIntro" href="safetysteps.html">Safety Steps</a>
+        <a id="navIntro"class="active" href="symptomchecker.html">Symptom Checker</a>
+        <a id="navIntro" href="videos.html">Videos</a>
+        <a id="navIntro" href="history.html">History</a>
+        <a id="navIntro" href="contact.html">Contact Us</a>
+        <a id="navIntro" href="developers.html">Developers</a>
+    </nav>
+</Header>
+    <div id="results">
+        <h2 id ="results-head">Your Results: Complete forms to get results</h2>
+    </div>
+    <div class="form">
+        <form name="checker">
+            <div class="questions">
+                <h1>What is your gender?</h1>
+                <input type="radio" name="q1"value="Male">Male
+                <input type="radio" name="q1" value="Female">Female
+
+
+            </div>
+            <div class="questions">
+                <h1>What is your age?</h1>
+                <input type="radio" name="q2" value="0-18">0-18
+                <input type="radio" name="q2" value="19-30">19-30
+                <input type="radio" name="q2" value="31-40">31-40
+                <input type="radio" name="q2" value="41-50">41-50
+                <input type="radio" name="q2" value="51-60">51-60
+                <input type="radio" name="q2" value="61-70">61-70
+                <input type="radio" name="q2" value="71-80">71-80
+                <input type="radio" name="q2" value="80+">80+
+
+            </div>
+            <div class="questions">
+                <h1>Any known health problems?</h1>
+                <input type="radio" name="q3" value="Yes">Yes
+                <input type="radio" name="q3" value="No">No<br>
+
+
+            </div>
+            <div class="questions">
+                <h1>Have you travelled <u>OR</u> been in contact with any sick persons?</h1>
+                <input type="radio" name="q4" value="Yes">Yes
+                <input type="radio" name="q4" value="No">No
+            </div>
+
+            <div class="questions">
+                <h1>Are you experiencing any of the following?</h1>
+                    <input type="checkbox" name="q5" value="Cough">Cough
+                    <input type="checkbox" name="q5" value="Fever">Fever
+                    <input type="checkbox" name="q5" value="Breath">Shortness of breath
+                    <input type="checkbox" name="q5" value="Fatigue">Fatigue
+                    <input type="checkbox" name="q5" value="Aches">Aches
+                    <input type="checkbox" name="q5" value="Sore Throat">Sore Throat
+                    <input type="checkbox" name="q5" value="Headaches">Headaches
+                    <input type="checkbox" name="q5" value="Fever">Runny or stuffy nose
+                    <input type="checkbox" name="q5" value="Vomiting">Vomiting
+                    <input type="checkbox" name="q5" value="Diarrhoea">Diarrhoea
+                <input type="checkbox" name="q5" value="Sneezing">Sneezing
+
+
+
+            </div>
+            <button onclick="onSubmit()" class="button-1" type="button">Submit</button>
+                </form>
+
+<div id="countryChartConfirmed"></div>
+<div id="countryChartDeaths"></div>
+<div id="countryChartRecovered"></div>
+    </div>
+
+</body>
+
+</HTML>
+
+

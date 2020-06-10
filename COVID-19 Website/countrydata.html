@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <!-- As the majority of notes would be copy and paste I have only noted this HTML and the earlyyears HTML. CSS is fully noted-->
+        <title>Covid19 - Country Data</title>
+        <meta charset="UTF-8">
+        <!-- setting viewport to make my grid flexible -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- naming my css file -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo" />
+		<!-- map libraries -->
+		<script src="https://www.amcharts.com/lib/4/core.js"></script>
+		<script src="https://www.amcharts.com/lib/4/charts.js"></script>
+		<script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		<script type="text/javascript" src="javascript/countrydataapps.js"></script>
+    </head>
+    <body id = "countryBody">
+        <Header class="header">
+            <h1><a href="index.html"><img class="headerImg" src="images/covid19.png" alt="Covid"></a></h1>
+            <h3>SARS-CoV-2 (Covid-19)</h3>
+            <!-- div to create my flexbox navigation bar-->
+            <nav class="navbarHome">
+                <!-- items for my navigation menu-->
+                <a id="navIntro" href="index.html">Home</a>
+				<a id="navIntro" class="active" href="countrydata.html">Country Data</a>
+				<a id="navIntro" href="safetysteps.html">Safety Steps</a>
+				<a id="navIntro" href="symptomchecker.html">Symptom Checker</a>
+				<a id="navIntro" href="videos.html">Videos</a>
+				<a id="navIntro" href="history.html">History</a>
+				<a id="navIntro" href="contact.html">Contact Us</a>
+				<a id="navIntro" href="developers.html">Developers</a>
+            </nav>
+        </Header>
+		<section>
+			<h4>Please select a country to display.</h4>
+			<!-- select options loaded by js-->
+			<select id="countries" name="countries" onchange="myFunction()">
+			</select>
+		</section>
+		<section id = "chartSection">
+			<div id="countryChartConfirmed"></div>
+			<div id="countryChartDeaths"></div>
+			<div id="countryChartRecovered"></div>
+		</section>
+    </body>
+	<footer>
+
+		<p class="copyright">
+			Cian Scarborough  3000011   David O'Reilly 3018591  &copy; 2020 <!-- Just decided to do copyright to make it look slightly more official-->
+
+		<div id="top">
+			<a href="#"><strong>Back To Top</strong></a><!--A button which brings you to top of page, also follows you down as you scroll-->
+		</div>
+		</p>
+
+	</footer>
+</HTML>
+</HTML>
+
+
+

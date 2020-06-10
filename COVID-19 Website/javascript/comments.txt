@@ -1,0 +1,5 @@
+{
+	name: 'Cian Scarborough',
+	date: '01 May, 2020',
+	body: 'Welcome to my site, please leave a comment if you would like to ask a question.',
+}

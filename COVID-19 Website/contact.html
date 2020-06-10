@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<HTML lang="en">
+    <head>
+        <!-- As the majority of notes would be copy and paste I have only noted this HTML and the early years HTML. CSS is fully noted-->
+        <title>Covid19 - HomePage</title>
+        <meta charset="UTF-8">
+        <!-- setting viewport to make my grid flexible -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- naming my css file -->
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Gruppo" />
+		<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+		<script type="text/javascript" src="javascript/contactForm.js"></script>
+    </head>
+    <body>
+        <Header class="header">
+            <h1><a href="index.html"><img class="headerImg" src="images/covid19.png" alt="Covid"></a></h1>
+            <h3>SARS-CoV-2 (Covid-19)</h3>
+            <!-- div to create my flexbox navigation bar-->
+            <nav class="navbarHome">
+                <!-- items for my navigation menu-->
+                <a id="navIntro" href="index.html">Home</a>
+				<a id="navIntro" href="countrydata.html">Country Data</a>
+				<a id="navIntro" href="safetysteps.html">Safety Steps</a>
+				<a id="navIntro" href="symptomchecker.html">Symptom Checker</a>
+				<a id="navIntro" href="videos.html">Videos</a>
+				<a id="navIntro" href="history.html">History</a>
+				<a id="navIntro" class="active" href="contact.html">Contact Us</a>
+				<a id="navIntro" href="developers.html">Developers</a>
+            </nav>
+        </Header>
+		<section>
+			<h3>Cian Scarborough</h3>
+			<h3>Phone: 085 130 2126</h3>
+			<h3><a class = "email" href = "mailto: cianscarborough@hotmail.com">Email: Cianscarborough@hotmail.com</a></h3>
+			<h3>David O'Reilly</h3>
+			<h3>Phone: 085 776 5955</h3>
+			<h3><a class = "email" href = "mailto: david.o.reilly@outlook.com">Email: david.o.reilly@outlook.com</a></h3>
+		</section>
+		<section>
+			<div class='form'>
+				<h4>Add Comments</h4> Name:
+				<input type="text" id="name">
+				<br/>
+				<br /> Date:
+				<input type="date" id="date" />
+				<br/>
+				<br /> Comment:
+				<textarea rows="5" col="30" id="bodyText"></textarea>
+				<br />
+				<br />
+				<input type="button" id="addComent" value="Add Comment">
+				</div>
+			<div id='container'></div>
+		</section>
+    </body>
+	<footer>
+
+		<p class="copyright">
+			Cian Scarborough 3000011    David O'Reilly 3018591  &copy; 2020 <!-- Just decided to do copyright to make it look slightly more official-->
+
+		<div id="top">
+			<a href="#"><strong>Back To Top</strong></a><!--A button which brings you to top of page, also follows you down as you scroll-->
+		</div>
+		</p>
+
+	</footer>
+</HTML>
+</HTML>
+
+
+
